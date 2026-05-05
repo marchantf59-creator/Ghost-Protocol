@@ -1,0 +1,39 @@
+[2026-04-05 00:49:00] ALERTA: Intruso detectado. Foto: INTRUSO_00-49-00.jpg
+[2026-04-05 00:49:06] ALERTA: Intruso detectado. Foto: INTRUSO_00-49-06.jpg
+[2026-04-05 01:09:47] ALERTA: Intruso detectado. Foto: INTRUSO_01-09-47.jpg
+[2026-04-05 01:10:05] ALERTA: Intruso detectado. Foto: INTRUSO_01-10-05.jpg
+[2026-04-05 01:30:01] ALERTA: Desconocido detectado. Foto: INTRUSO_01-30-01.jpg
+[2026-04-05 01:30:13] ALERTA: Desconocido detectado. Foto: INTRUSO_01-30-13.jpg
+[2026-04-05 01:30:20] ALERTA: Desconocido detectado. Foto: INTRUSO_01-30-20.jpg
+[2026-04-10 18:15:13] ALERTA: Desconocido detectado. Foto: INTRUSO_18-15-13.jpg
+[2026-04-10 18:15:18] ALERTA: Desconocido detectado. Foto: INTRUSO_18-15-18.jpg
+[2026-04-10 18:15:25] ALERTA: Desconocido detectado. Foto: INTRUSO_18-15-25.jpg
+[2026-04-10 18:18:55] ALERTA: Desconocido detectado. Foto: INTRUSO_18-18-55.jpg
+[2026-04-10 18:19:00] ALERTA: Desconocido detectado. Foto: INTRUSO_18-19-00.jpg
+[2026-04-10 18:19:08] ALERTA: Desconocido detectado. Foto: INTRUSO_18-19-08.jpg
+[2026-04-10 18:19:14] ALERTA: Desconocido detectado. Foto: INTRUSO_18-19-14.jpg
+[2026-04-10 18:19:19] ALERTA: Desconocido detectado. Foto: INTRUSO_18-19-19.jpg
+[2026-04-10 18:19:24] ALERTA: Desconocido detectado. Foto: INTRUSO_18-19-24.jpg
+[2026-04-10 18:19:30] ALERTA: Desconocido detectado. Foto: INTRUSO_18-19-30.jpg
+[2026-04-10 18:19:35] ALERTA: Desconocido detectado. Foto: INTRUSO_18-19-35.jpg
+[2026-04-10 18:19:40] ALERTA: Desconocido detectado. Foto: INTRUSO_18-19-40.jpg
+[2026-04-10 18:22:21] ALERTA: Intruso detectado. Confianza Promedio: 88.43
+[2026-04-10 18:22:27] ALERTA: Intruso detectado. Confianza Promedio: 80.05
+[2026-04-10 18:22:32] ALERTA: Intruso detectado. Confianza Promedio: 81.45
+[2026-04-10 18:22:37] ALERTA: Intruso detectado. Confianza Promedio: 80.02
+[2026-04-10 18:22:42] ALERTA: Intruso detectado. Confianza Promedio: 80.09
+[2026-04-10 18:22:49] ALERTA: Intruso detectado. Confianza Promedio: 80.20
+[2026-04-10 18:22:54] ALERTA: Intruso detectado. Confianza Promedio: 80.46
+[2026-04-10 18:22:59] ALERTA: Intruso detectado. Confianza Promedio: 80.06
+[2026-04-10 18:23:04] ALERTA: Intruso detectado. Confianza Promedio: 82.42
+[2026-04-10 18:23:09] ALERTA: Intruso detectado. Confianza Promedio: 80.29
+[2026-04-10 18:23:14] ALERTA: Intruso detectado. Confianza Promedio: 80.39
+[2026-04-10 18:26:34] ALERTA: Intruso detectado. Promedio Conf: 93.92
+[2026-04-10 18:26:41] ALERTA: Intruso detectado. Promedio Conf: 88.18
+[2026-04-10 18:26:49] ALERTA: Intruso detectado. Promedio Conf: 163.80
+[2026-04-10 18:26:55] ALERTA: Intruso detectado. Promedio Conf: 88.17
+[2026-04-10 18:27:00] ALERTA: Intruso detectado. Promedio Conf: 97.79
+[2026-04-10 18:27:06] ALERTA: Intruso detectado. Promedio Conf: 111.61
+[2026-04-10 18:27:13] ALERTA: Intruso detectado. Promedio Conf: 88.10
+[2026-04-10 18:34:24] ALERTA: Intruso detectado. Promedio Conf: 88.57
+[2026-04-10 18:34:33] ALERTA: Intruso detectado. Promedio Conf: 88.17
