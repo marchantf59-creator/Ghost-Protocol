@@ -1,34 +1,28 @@
 import asyncio
 from bleak import BleakScanner
 
-# Aquí pondremos la dirección MAC de tu ESP32 cuando lo conectemos mañana
-DIRECCION_LLAVE = "TU_ESP32_MAC_AQUI" 
-
 async def monitorear_llave():
-    print(">>> GHOST-PROTOCOL: Escaneando llave maestra...")
+    print(">>> GHOST-PROTOCOL: Escaneando TODO el perímetro Bluetooth...")
     
     while True:
-        # Escanea los dispositivos Bluetooth cercanos por 3 segundos
-        dispositivos = await BleakScanner.discover(timeout=3.0)
-        llave_detectada = False
+        # Usamos discover de forma que nos devuelva el dispositivo y sus datos de anuncio por separado
+        dispositivos = await BleakScanner.discover(timeout=3.0, return_adv=True)
         
-        for d in dispositivos:
-            # Aquí tu script buscará el nombre o la dirección de tu SuperMini
-            if d.name and "ESP32" in d.name:
-                print(f"Llave detectada: {d.name} | Señal (RSSI): {d.rssi} dBm")
-                llave_detectada = True
-                
-                # Si la señal es muy baja (ej. menor a -85), significa que te alejaste
-                if d.rssi < -85:
-                    print("¡ALERTA: Llave demasiado lejos! Preparando bloqueo...")
+        print(f"\n--- Dispositivos detectados en este ciclo ({len(dispositivos)}): ---")
         
-        if not llave_detectada:
-            print("¡ALERTA: Llave no encontrada! Perímetro comprometido.")
-            # Aquí llamaremos a tu script test_ia_v1.4.py para bloquear
+        # Ahora recorremos usando la estructura nueva de bleak
+        for direccion, (d, adv) in dispositivos.items():
+            nombre = d.name if d.name else 'Desconocido'
+            rssi = adv.rssi # Aquí sacamos la señal de forma correcta
             
-        await asyncio.sleep(2) # Espera 2 segundos antes de volver a escanear
+            print(f"-> MAC: {direccion} | Nombre: {nombre} | Señal: {rssi} dBm")
+            
+            # Buscamos tu llave por su nombre en mayúsculas o su dirección MAC física
+            if "GHOST" in nombre.upper() or direccion.lower() == "98:3d:ae:52:f9:2c":
+                print(f"   [¡ALERTA!] ¡Misión cumplida! Se encontró la llave maestra.")
+        
+        await asyncio.sleep(2)
 
-# Arranca el bucle de escucha
 try:
     asyncio.run(monitorear_llave())
 except KeyboardInterrupt:
